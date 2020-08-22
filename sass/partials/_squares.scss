@@ -1,0 +1,26 @@
+.squares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .squares-item {
+        height: 263px;
+        width: 264px;
+        margin-right: 32px;
+        border-radius: 1rem;
+        background-color: map-get($colors, primary);
+        padding: 1rem;
+        margin-bottom: 3rem;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
+    }
+
+    .squares-item.lined {
+        background-color: white !important;
+        border: 3px solid map-get($colors, pinked);
+    }
+
+    .squares-item.filled {
+        background-color: map-get($colors, pinked) !important;
+        border: 3px solid white;
+    }
+}
